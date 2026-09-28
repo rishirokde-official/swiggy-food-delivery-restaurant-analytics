@@ -617,7 +617,15 @@ Through this project, I practiced:
 
 # 👨‍💻 Author
 
-**Vihan**
+**Rishi Rokde**
+*Data Engineer*
+*EmaiID-rishirokde.official@gmail.com*
+
+## Connect with Me
+
+- 💼 LinkedIn: [Rishi Rokde](https://www.linkedin.com/in/rishi-data-engineer/)
+- 🐙 GitHub: [rishirokde-official](https://github.com/rishirokde-official)
+
 
 ### Skills Demonstrated
 
