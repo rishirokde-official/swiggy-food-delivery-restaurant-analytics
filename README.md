@@ -1,4 +1,4 @@
-# 🍽️ Swiggy Restaurant & Food Delivery Analytics
+# 🍽️ Swiggy Food Delivery & Restaurent Analytics
 
 ![SQL](https://img.shields.io/badge/SQL-Server-blue)
 ![Data Analysis](https://img.shields.io/badge/Data%20Analysis-SQL-orange)
