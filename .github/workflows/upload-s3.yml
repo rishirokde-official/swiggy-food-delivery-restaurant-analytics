@@ -1,0 +1,33 @@
+name: Upload Swiggy Data to S3
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "*.csv"
+  workflow_dispatch:
+
+jobs:
+  upload-to-s3:
+    runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ap-southeast-2
+
+      - name: Upload CSV files to S3
+        run: |
+          aws s3 sync . s3://swiggy-data1/raw/ \
+            --exclude "*" \
+            --include "*.csv"
